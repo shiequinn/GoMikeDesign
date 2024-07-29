@@ -194,7 +194,8 @@ a:hover {
 }
 
 .d-bloc {
-    color:rgba(255, 255, 255, .7);
+    color:rgba(247, 244, 244, 0.7);
+    
 }
 
 .d-bloc button:hover {
@@ -211,6 +212,7 @@ a:hover {
 
 .d-bloc .divider-h span {
     border-color: rgba(255, 255, 255, .2);
+
     
 
 }
@@ -230,6 +232,7 @@ a:hover {
 .d-bloc h6 a,
 .d-bloc p a {
     color: rgba(75, 61, 61, 0.6); /* change the color into more darker*/
+
 }
 
 .d-bloc .a-btn:hover,
@@ -566,8 +569,6 @@ nav .caret {
     width:600px;
 }
 
-
-
 /* text of the bloc 3 and bloc 4*/
 .mg-md {
     margin-top:10px;
@@ -791,14 +792,12 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn{
     font-family: "helvetica";
     font-weight: 600; /* change fron weight from 400 to 600*/
-    color: rgb(114, 99, 99)!important; /* change the color more darker*/ 
-
-
+    color: #6c6464!important; 
 }
+
 
 .container {
     max-width: 1000px;
@@ -935,7 +934,11 @@ h4 {
 }
 /*footer background*/
 .bgc-dark-slate-blue {
-    background-color: #364577;
+    background-color: #364577;/* change color recommended by the WCAG*/ 
+    
+    a{
+        color:#f8f4f4;
+    }
 
 }
 
