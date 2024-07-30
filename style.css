@@ -945,10 +945,15 @@ h4 {
     background-color: #364577;/* change color recommended by the WCAG and set gap recommended from lighthouse SEO*/ 
 
     
-    a{
+   a{
         color:#f8f4f4;
-        padding:5px;
-        font-size:16px;
+        padding:10px;
+        font-size: 24px;
+    
+    }
+    .col-sm-4{
+        font-size: 24px;
+
     }
 
 }
