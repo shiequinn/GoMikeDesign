@@ -39,13 +39,14 @@ a:hover {
     -o-background-size: cover;
     background-size: cover;
     position: relative;
+
     
     
 }
 
 .bloc .container {
     padding-left: 0;
-    padding-right: 0;
+    padding-right:0;
     
     
 }
@@ -55,26 +56,25 @@ a:hover {
     height: 450px;
     padding: 100px 50px; 
 
+
 }
 .bloc-lg-page2{
     color:#FFFFFF;
-
-    .p{
-        color: #FFFFFF;
-    }
     
 
 }
 /* bloc-2 services area*/
 .bloc-md{
     width:100%;
-    height: 300px;
+    height: 500px;
     padding: 20px; /* i change the padding from 50px to 20px */
-
-    .col-xs-12{
-        margin-left:150px;
-    }
+    
 }
+.col-xs-12 img{
+        margin-left: 250px;
+    
+    }
+
 .row-bloc2{
     margin-left: 200px;
 }
@@ -108,16 +108,17 @@ a:hover {
 
 
     }
- 
-
 .col-sm-12{
+   width: 100%;
    border-radius: 15px;
-   box-shadow: 5px #3a3838;
    padding:10px;
    margin-bottom: 30px;
    
-
 }
+.col-sm-13{
+    padding:40px;
+}
+
 
 /* for bloc -4 portfolio*/
 .bloc-portfolio{
@@ -126,9 +127,19 @@ a:hover {
     display: flex;
     padding:20px;
     justify-content: center;
-
+    
+}
 /* change the bloc-4 portfolio into different grid row together with 4 images*/
-.row1,
+.row1{
+    display: flex;
+    align-items: flex-start;
+    flex-direction:row;
+    width:100%;
+    gap:0;
+    padding:0; 
+    margin:0;
+  }
+
 .row2{
   display: flex;
   align-items: flex-start;
@@ -141,10 +152,6 @@ a:hover {
 .row2 .text-center{
     font-size: 12px;
 }
-
-}
-
-
 
 
 
@@ -444,7 +451,7 @@ a:hover {
 }
 
 .navbar-toggle {
-    background-color:none;
+    background:none;
     margin: 10px 10px 0 0;
     border: 0px;
 }
@@ -850,6 +857,7 @@ p {
     font-weight: 700;
 
 
+
     
 }
     
@@ -861,7 +869,6 @@ p {
     font-size: 16px;
     gap:10px; /* set gap recommended by the lighthouse SEO*/
     margin: auto auto auto auto;
-
     
 }
 /* bloc-3 and bloc-5 area*/
@@ -926,6 +933,7 @@ h4 {
 }
 /* bloc-3 "are you ready contact me area"*/
 .bold-link {
+    padding:5px;
     font-weight: 900;
     text-decoration: underline!important;
 
@@ -944,19 +952,18 @@ h4 {
 .bgc-dark-slate-blue {
     background-color: #364577;/* change color recommended by the WCAG and set gap recommended from lighthouse SEO*/ 
 
-    
-   a{
+}
+.col-sm-4{
+    font-size: 24px;
+}
+
+.col-sm-4 a{
         color:#f8f4f4;
         padding:10px;
-        font-size: 24px;
+        font-size: 20px;
     
     }
-    .col-sm-4{
-        font-size: 24px;
 
-    }
-
-}
 
 .bgc-atomic-tangerine {
     margin-left: 0;
@@ -1041,13 +1048,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -1064,21 +1071,6 @@ h4 {
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
-    }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
-    .bloc-group,
-    .bloc-group .bloc {
-        display: block;
-        width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -1157,10 +1149,12 @@ h4 {
     .navbar-brand img {
         max-height: 40px;
         width: auto;
+    
     }
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
+        
     }
     .nav-invert .navbar-toggle {
         float: left;
@@ -1169,6 +1163,7 @@ h4 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+
     }
     .bloc-xxl,
     .bloc-xl,
@@ -1220,35 +1215,51 @@ h4 {
     }
 }
 /* media for tablet*/
-/*bloc-2-services*/
 @media (max-width: 810px) {
+   /* hi mike tablet media */
+   .col-sm-14 img{
+    margin-left: 270px;
+
+   }
+
+ /*bloc-2-services*/
     .bloc-md{
         width:100%;
 
-
-        img{
-            width:400px;
+    }
+    .col-sm-5 img{
+            width:600px;
+            margin-left: -100px;
         
         }
         .col-sm-7{
-            width:150px;
-            padding:0;
+            width:190px;
+            padding:10px;
             gap:0;
-            margin-left: 80px;
-
+            margin-left:50px;
+           
         }
+        .col-sm-7 p{
+            padding:20px;
+            gap:10px;
+            margin-left: -60px;
+        
+
+            
+        }
+
         .col-xs-12{
-            margin-left: 10px;
+            margin-left: -120px;
         }
 
 
-    }
+    
 
 }
 @media (max-width: 810px) {
     .bloc-portfolio{
         width:100%;
-    
+    }
     .row1{
         margin-left:0;
         gap:0;
@@ -1260,36 +1271,46 @@ h4 {
         margin-left:0;
     }
 
-    }
-}
+} 
+
+
 
 /* media for bloc-2-services*/
 @media (max-width: 414px) {
       .bloc-md{
         width:100%;
-
-      img{
+      }
+      .bloc-md img{
         width:400px;
         margin-left:-180px;
 
       }
       .col-xs-12 img{
         width:400px;
-        margin-left: -20px;
+        margin-left:130px;
       }
       .col-sm-7{
-        margin-left:130px;
-
-        span{
+        margin-left:110px;
+      }
+    .col-sm-7 span{
             width:100px;
         }
-              p{
-            margin-left: -60px;
-        }  
-              
-      }
-
-     }
+    .col-sm-7 p{
+            margin-left: -40px;
+        }
+      
+/* media for hi mike */
+.col-sm-14 img{
+    width:170px;
+    margin-left: 120px;
+}
+.col-sm-14 h1{
+    margin-left: 10px;
+}
+.col-sm-14 a{
+    margin-left:10px ;
+}
+     
 
 }
 /* media for "what i do"*/
@@ -1302,11 +1323,11 @@ h4 {
         width:100%;
         margin-left:0;
         padding:0;
-
-    h2{
+    }
+    .bloc-qoutes h2{
         margin-left:0;
      }
-}
+
 }
 @media (max-width: 414px) {
     .bloc{
@@ -1327,7 +1348,7 @@ h4 {
         height: 100%;
         display: flex;
         flex-direction: column;
-
+    }
         .row1{
             width:100%;
             flex-direction: column;
@@ -1338,22 +1359,23 @@ h4 {
             flex-direction: column;
             align-items: center;
         }
-        .col-sm-12{
-            width:300px;
+        .col-sm-13 img{
+            width:420px;
+            margin-left:-25px;
 
         }
-        img{
+        .col-sm-6 img{
             width:400px;
-            margin-left: 10px;
+            margin-left: 5px;
         }
-        h3{
-            margin-left: 20px;
+        .col-sm-6 h3{
+            margin-left: -10px;
         }
-        p{
-            margin-left: 20px;
+        .col-sm-6 p{
+            margin-left: -10px;
         }
     
-     } 
+     
 }
 /* media for footer i did some changes*/
 @media (max-width: 414px) {
@@ -1361,13 +1383,13 @@ h4 {
         width:100%;
         height:100%;
         padding:10px;
-
+    }
         .row-footer2{
            margin-top: 80px;  
         }
 
     
-    }
+    
 
 }
 
