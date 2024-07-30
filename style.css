@@ -796,6 +796,7 @@ label,
     font-family: "helvetica";
     font-weight: 600; /* change fron weight from 400 to 600*/
     color: #6c6464!important; 
+
 }
 
 
@@ -820,6 +821,7 @@ label,
     font-weight: lighter;
     max-width: 520px;
     margin: auto auto auto auto;
+
 }
 /* home and page2 text size*/
 p {
@@ -847,6 +849,7 @@ p {
     font-size: 1.0em;
     font-weight: 700;
 
+
     
 }
     
@@ -854,8 +857,11 @@ p {
  /* footer social area*/
 .social {
     max-width: 700px;
-    height: 100px;
+    height: 150px;
+    gap:10px; /* set gap recommended by the lighthouse SEO*/
     margin: auto auto auto auto;
+
+    
 }
 /* bloc-3 and bloc-5 area*/
 h2 {
@@ -889,6 +895,7 @@ h4 {
 .icons {
     margin-bottom: 14px;
     margin-top: 24px;
+
 
 }
 /*bloc-3 paragraph*/
@@ -934,10 +941,12 @@ h4 {
 }
 /*footer background*/
 .bgc-dark-slate-blue {
-    background-color: #364577;/* change color recommended by the WCAG*/ 
+    background-color: #364577;/* change color recommended by the WCAG and set gap recommended from lighthouse SEO*/ 
+
     
     a{
         color:#f8f4f4;
+        padding:5px;
     }
 
 }
